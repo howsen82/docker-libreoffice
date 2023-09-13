@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  libreoffice:
+    container_name: libreoffice
+    image: ghcr.io/linuxserver/libreoffice
+    environment:
+      - PUID=1026
+      - PGID=100
+      - TZ=Asia/Kuching
+    volumes:
+      - /data/libre/config:/config
+    ports:
+      - 3000:3000
+    restart: always
