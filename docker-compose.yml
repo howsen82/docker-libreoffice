@@ -8,6 +8,8 @@ services:
       - PUID=1026
       - PGID=100
       - TZ=Asia/Kuching
+      - CUSTOM_USER=howsen
+      - PASSWORD=password
     volumes:
       - /data/libre/config:/config
     ports:
